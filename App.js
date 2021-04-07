@@ -27,7 +27,11 @@ const App = () => {
           component={WelcomeScreen}
           options={{title: 'Welcome'}}
         />
-        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen
+          name="Details"
+          component={DetailsScreen}
+          initialParams={{message: 'This is the initial message'}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
