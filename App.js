@@ -30,7 +30,7 @@ const App = () => {
         <Stack.Screen
           name="Details"
           component={DetailsScreen}
-          initialParams={{message: 'This is the initial message'}}
+          initialParams={{messageParam: 'This is the initial message'}}
         />
       </Stack.Navigator>
     </NavigationContainer>
