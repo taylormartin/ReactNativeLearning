@@ -12,7 +12,8 @@ export const DetailsScreen = ({navigation, route}) => {
       <Text>{message}</Text>
       <Text>{messageNote}</Text>
       <TextInput
-        placeholder="text input"
+        testID="text-input"
+        placeholder="text placeholder"
         onChangeText={setTextInputVal}
         value={textInputVal}
       />
@@ -27,7 +28,7 @@ export const DetailsScreen = ({navigation, route}) => {
         title="Details"
         onPress={() =>
           navigation.setParams({
-            message: 'Update message is here',
+            messageParam: 'Update message is here',
           })
         }
       />
